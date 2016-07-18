@@ -1,0 +1,17 @@
+﻿<Window x:Class="Ugly.Yaua.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ids="clr-namespace:Ugly.Yaua.AutomationIds;assembly=Ugly.Yaua.AutomationIds"
+        xmlns:views="clr-namespace:Ugly.Yaua.Views"
+        Title="Yet Another Ugly App" Height="350" Width="525">
+    <Grid>
+        <TabControl AutomationProperties.AutomationId="{x:Static ids:MainWindowIds.HelloWorldTab}">
+            <TabItem Header="Ugly Welcome!">
+                <Label>Some ugly introduction</Label>
+            </TabItem>
+            <TabItem Header="{x:Static ids:MainWindowIds.HelloWorldTabHeader}">
+                <views:HelloWorldView DataContext="{Binding HelloWorld}"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
