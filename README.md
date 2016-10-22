@@ -1,3 +1,6 @@
+BDD + UI Automation = Conslugo.Automation
+=========================================
+
 # What is it?
 
 Consulgo.Tests is an experiment in using Reactive Extensions to produce reactive tests that are readable and hide boiler plate. This is Proof-Of-Concept, that it's possible to implement reactive approach for both BDD and Windows Automation instead of the ugly repeatable code.
