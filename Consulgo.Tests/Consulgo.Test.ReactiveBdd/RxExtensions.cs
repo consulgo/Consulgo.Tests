@@ -18,7 +18,7 @@ namespace Consulgo.Test.ReactiveBdd
         /// <param name="previousProducer">Froducer of first observable</param>
         /// <param name="nextProducer">Producer of second observable</param>
         /// <returns>Chained execution observable</returns>
-        public static Func<IObservable<T>> ChainFuns<T>(this Func<IObservable<T>> previousProducer, Func<IObservable<T>> nextProducer)
+        public static Func<IObservable<T>> ChainFuns<T>(Func<IObservable<T>> previousProducer, Func<IObservable<T>> nextProducer)
         {
             return () => Observable.Defer(previousProducer).IsEmpty().SelectMany(Observable.Defer(nextProducer));
         }

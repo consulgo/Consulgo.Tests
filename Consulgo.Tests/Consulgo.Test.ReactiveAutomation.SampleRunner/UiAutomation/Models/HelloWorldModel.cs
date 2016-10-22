@@ -5,13 +5,13 @@ namespace Consulgo.Test.ReactiveAutomation.SampleRunner.UiAutomation.Models
 {
     public class HelloWorldModel : PaneControl
     {
-        public TextControl Name { get; set; }
+        public TextControl EnteredName { get; set; }
         public ButtonControl AcceptButton { get; set; }
         public TextControl Result { get; set; }
 
         public HelloWorldModel()
         {
-            Name = AutomationControlDescription.ById(MainWindowIds.HelloWorldName)
+            EnteredName = AutomationControlDescription.ById(MainWindowIds.HelloWorldName)
                             .ChildOf(this)
                             .As<TextControl>();
 

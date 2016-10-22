@@ -39,8 +39,8 @@ namespace Consulgo.Test.ReactiveAutomation.SampleRunner.UiAutomation
         {
             return new RequireCommand<UglyApplicationModel>(
                 (require) => require.Before(s => s.MainWindow.HelloWorldTab.HelloWorld, _automationResolver)
-                                    .Before(s => s.MainWindow.HelloWorldTab.HelloWorld.Name, _automationResolver),
-                () => state.Model.MainWindow.HelloWorldTab.HelloWorld.Name.Value = Name);
+                                    .Before(s => s.MainWindow.HelloWorldTab.HelloWorld.EnteredName, _automationResolver),
+                () => state.Model.MainWindow.HelloWorldTab.HelloWorld.EnteredName.Value = Name);
         }
 
         public ICommand<UglyApplicationModel> HelloWorldModeOpen(ApplicationState<UglyApplicationModel> state)
