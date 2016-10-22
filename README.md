@@ -1,5 +1,5 @@
-BDD + UI Automation = Conslugo.Automation
-=========================================
+BDD + UI Automation = Conslugo.Tests.ReactiveBdd + Conslugo.Tests.ReactiveAutomation 
+====================================================================================
 
 # What is it?
 
